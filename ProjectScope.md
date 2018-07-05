@@ -2,10 +2,11 @@
     We are to develop an advanced surveillance system using image processing techs so that we enhance the conventional system 
 
 ### Objective
-    
+    To unveil new era of surveillance system using Artificial Intelligence like skynet
 
 ### Goal
-    To develop an advanced surveillance system based on existing camera system(Do not change system. To level up few cameras is possible)
+    To develop an advanced surveillance system based on existing camera system
+    (Do not change system. To level up few cameras is possible)
     
 ### Requirement(Hardware)
     Image Processing Server: 2,4GPU(over GPX1080)
