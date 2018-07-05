@@ -22,7 +22,10 @@
 
 ### Deliveries
     1. Performance Test Program
-    2. 
+    2. DLL
+    3. Python Capsule
+    4. Embed Watermark/Software Protection/Encryption
+    5. Hide Important Info(Network Configuration, Network Model)
     
 ### Steps
     1.
