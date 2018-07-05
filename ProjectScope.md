@@ -1,10 +1,11 @@
 ### Scope
-    To provide an advance 
+    We are to develop an advanced surveillance system using image processing techs so that we enhance the conventional system 
+
+### Objective
+    
 
 ### Goal
-    1. To develop an advanced surveillance system
-    2. To base on existing camera system(Do not change system. To level up few cameras is possible)
-    3. 
+    To develop an advanced surveillance system based on existing camera system(Do not change system. To level up few cameras is possible)
     
 ### Requirement(Hardware)
     Image Processing Server: 2,4GPU(over GPX1080)
@@ -51,8 +52,8 @@
 
 
 ### Risks
-    1. 
-    2. 
+    1. Change of Specification
+    2. Misunderstanding of Specification
     3. 
     
 ### Communication
