@@ -1,5 +1,5 @@
 ### Scope
-    We are to develop an advanced surveillance system using image processing techs so that we enhance the conventional system 
+    JSK.dst
 
 ### Objective
     To unveil new era of surveillance system using Artificial Intelligence like skynet
