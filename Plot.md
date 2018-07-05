@@ -2,8 +2,7 @@
     JSK.dst
 
 ### Objective
-    To unveil new era of surveillance system using Artificial Intelligence like skynet
-
+    To unveil new era of surveillance system using Computer Vision Techs
 ### Goal
     To develop an advanced surveillance system based on existing camera system
     (Do not change system. To level up few cameras is possible)
