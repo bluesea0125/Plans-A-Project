@@ -20,11 +20,13 @@
     1. 
     2. 
     3. 
+### Communication
+### Presentation
 ### Meeting
     1. Stimulation/Push
     2. Synchronization
        - Share Status/Opinion
        - Accelerate cooperation
-       - Resolve dilema
+       - Resolve dilemma
     3. Inspiration
     4. Log
