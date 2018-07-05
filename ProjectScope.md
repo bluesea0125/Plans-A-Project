@@ -17,7 +17,36 @@
     2. to have one big server() real-time process frames for 10 cameras
     3. batch process
     4. network framework
+    5. testbed
+    6. 
+
+### Deliveries
+    1. Performance Test Program
+    2. 
     
+### Steps
+    1.
+
+### Engines
+    Major
+    1. Detection
+    2. Licence Plate Recognition(
+    3. Vehicle Brand Recognition
+    4. Driver Recognition
+    5. Face Recognition
+    6. Object Tracking
+
+    Minor
+    1. Abnormality Recognition
+    2. Violation Recognition
+    3. Feature Recognition
+
+### OS, Database, Network
+
+### Functions
+    
+
+
 ### Risks
     1. 
     2. 
@@ -25,7 +54,9 @@
     
 ### Communication
     
+    
 ### Presentation
+    
     
 ### Meeting
     1. Stimulation/Push
