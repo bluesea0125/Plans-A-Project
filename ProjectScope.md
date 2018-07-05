@@ -18,8 +18,8 @@
     4. network framework
 ### Risks
     1. 
-    2.
-    3.
+    2. 
+    3. 
 ### Meeting
     1. Stimulation/Push
     2. Synchronization
