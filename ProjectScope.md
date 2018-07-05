@@ -28,6 +28,7 @@
     3. Python Capsule
     4. Embed Watermark/Software Protection/Encryption
     5. Hide Important Info(Network Configuration, Network Model)
+    6. Interoperability(Linux,Windows)
     
 ### Steps
     1.
@@ -40,6 +41,8 @@
     4. Driver Recognition
     5. Face Recognition
     6. Object Tracking
+    7. Draw Ground Line/Violation Recognition
+    8. Vehicle Feature Recognition
 
     Minor
     1. Abnormality Recognition
