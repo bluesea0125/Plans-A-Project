@@ -8,7 +8,11 @@
     (Do not change system. To level up few cameras is possible)
     
 ### Requirement(Hardware)
-    Image Processing Server: 2,4GPU(over GPX1080)
+    Image Processing Server: 
+            Intel Xeon E5-2600V3/V4 12C/24T 2.2GHz 30M 9.6GT/s 105W
+            16-DDR4 2133/1866/1600MHz ECC DDR4 SDRAM 128G
+            240G SSD-2,6T SATA-3
+            NVIDIA 1080 12G-4
     
 ### Architecture
     
