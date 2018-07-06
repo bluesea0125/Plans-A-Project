@@ -38,14 +38,15 @@
 
 ### Engines
     Major
-    1. Detection
+    1. Detection/Classification
+    - Class : Vehicle, Motorcycle, Pedestrian
     2. Licence Plate Recognition(including double-plate recognition)
     3. Vehicle Brand Recognition
     4. Driver Recognition
     5. Face Recognition
     6. Object Tracking
-    7. Vehicle Feature Recognition
-
+    - Features : Vehicle-License Plate,Color,Brand,Type...
+                 Pedestrian-face,gender,age,color
     Minor
     1. Abnormality Recognition
     2. Draw Ground Line/Violation Recognition
