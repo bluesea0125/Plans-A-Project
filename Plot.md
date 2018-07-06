@@ -62,7 +62,10 @@
 ### Risks
     1. Change of Specification
     2. Misunderstanding of Specification
-    3. 
+    3. Communication Failure, Synchronization Error
+    4. Tech Issues
+       - CV engine fails to reach the expected accuracy
+       - Network Communication
     
 ### Communication
     
