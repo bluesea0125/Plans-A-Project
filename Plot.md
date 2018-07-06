@@ -40,13 +40,12 @@
     4. Driver Recognition
     5. Face Recognition
     6. Object Tracking
-    7. Draw Ground Line/Violation Recognition
-    8. Vehicle Feature Recognition
+    7. Vehicle Feature Recognition
 
     Minor
     1. Abnormality Recognition
-    2. Violation Recognition
-    3. Feature Recognition
+    2. Draw Ground Line/Violation Recognition
+    3. Vehicle Feature Recognition
 
 ### OS, Database, Network
 
