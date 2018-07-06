@@ -52,7 +52,13 @@
 ### Functions
     
 
-
+### Object-Relationship Analysis
+    Customer                    Team
+             Partner, Leader
+    -->Request
+                         Response<--
+         -->Merge,Negociate<--
+     Goal,Opinion<---->Opinion 
 ### Risks
     1. Change of Specification
     2. Misunderstanding of Specification
