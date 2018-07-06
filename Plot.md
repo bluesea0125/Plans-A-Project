@@ -35,7 +35,7 @@
 ### Engines
     Major
     1. Detection
-    2. Licence Plate Recognition(
+    2. Licence Plate Recognition(including double-plate recognition)
     3. Vehicle Brand Recognition
     4. Driver Recognition
     5. Face Recognition
