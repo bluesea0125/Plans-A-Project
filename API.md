@@ -12,12 +12,24 @@
             "frameid" : 20131212411,
             "entities" : [
                           {
-                            "class" : "vehicle",
-                            "type" : "truck"
+                            "class" : "vehicle",#vehicle,pedestrian,motorcycle
+                            "type" : "truck",#truck,bus,mini
+                            "color" : "green",
+                            "license" : "粤B12345",
+                            "position" : {
+                                          "left" : 100,
+                                          "top" : 100,
+                                          "width" : 200,
+                                          "height" : 200
+                                        }
+                            "status" : "normal"#overstay,
+                          },
+                          {
+                            "class" : "pedestrian",
+                            "type" : "truck",
                             "license" : "粤B12345",
                             "position" : [10,20,100,200]#[x,y,width,height]
-                          },
-                          
+                          },                          
                          ]
          },
          {
@@ -26,7 +38,8 @@
 ### Layer-1
     Object Detection
     { [{
-          "class": "vehicle"
+          "class": "vehicle",
+          "confidence" : "",
           "position": {
                             "left": 100,
                             "top": 100,
