@@ -27,8 +27,13 @@
                           {
                             "class" : "pedestrian",
                             "type" : "truck",
-                            "license" : "粤B12345",
-                            "position" : [10,20,100,200]#[x,y,width,height]
+                            "name" : "陈玉龙",
+                            "position" : {
+                                              "left" : 100,
+                                              "top" : 100,
+                                              "width" : 200,
+                                              "height" : 200
+                                            }
                           },                          
                          ]
          },
