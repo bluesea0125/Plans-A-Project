@@ -4,7 +4,24 @@
       ->Azure says possible.
        https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
        
-
+### API
+    {[
+        {
+            "cameraid" : 0,
+            "frameid" : 20131212411,
+            "entities" : [
+                          {
+                            "class" : "vehicle",
+                            "type" : "truck"
+                            "license" : "粤B12345",
+                            "position" : [10,20,100,200]#[x,y,width,height]
+                          },
+                          
+                         ]
+         },
+         {
+         },
+      ]}    
 ### Layer-1
     Object Detection
     { [{
