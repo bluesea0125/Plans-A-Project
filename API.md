@@ -1,6 +1,7 @@
 ### Questions
-    1. Is it possible that JSON Format is used for real time data streaming?
-    2. Most of CV APIs support JSON Interface. Do they support real time also?
+    1. JSON or PACKET
+    2. Is it possible that JSON Format is used for real time data streaming?
+    3. Most of CV APIs support JSON Interface. Do they support real time also?
       ->Azure says possible.
        https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
        
