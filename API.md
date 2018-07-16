@@ -8,6 +8,8 @@
        https://github.com/bluesea0125/tests-http-streaming
        
 ### Architecture
+    - Setting
+    
     - IN
     DataStream-->Processing Server-->Result-->|
                                               |-->SQL Server-->|
