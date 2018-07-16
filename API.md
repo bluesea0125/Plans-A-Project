@@ -39,6 +39,8 @@
                   `create_time` bigint(20) NOT NULL COMMENT 'CREATE TIME',
                   `status` tinyint(2) DEFAULT NULL COMMENT '0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE'
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+                
+# APIs
 ### [General]
     {
         'camera_id':0, # CAMERA ID
@@ -59,3 +61,4 @@
                     status: # 0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE}
                     ]
       }
+### []
