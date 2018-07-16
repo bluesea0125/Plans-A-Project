@@ -6,7 +6,19 @@
        https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
       ->Experiment prove it
        https://github.com/bluesea0125/tests-http-streaming
+       
+### Architecture
+    - IN
+    DataStream-->Processing Server-->Result-->|
+                                              |-->SQL Server-->|
+                                                               |--->DB
+    - OUT
+    Request--------------------------------------------------->|
+                                                               |<---DB   
+                                              |<--SQL Server<--|
+    Response<-----Web Server<------Result<----|
 
+    
 ### SQL
     camera0=
                 CREATE TABLE IF NOT EXISTS t_objdet_camera0_his (
@@ -27,7 +39,7 @@
                   `create_time` bigint(20) NOT NULL COMMENT 'CREATE TIME',
                   `status` tinyint(2) DEFAULT NULL COMMENT '0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE'
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-### [1]
+### [General]
     {
         'camera_id':0, # CAMERA ID
         'frame_id':192010020, # FRAME INDEX
