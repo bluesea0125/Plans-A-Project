@@ -42,23 +42,33 @@
                 
 # APIs
 ### [General]
+    Request: http://127.0.0.1:9000/0/objdet
+    Response:
     {
         'camera_id':0, # CAMERA ID
         'frame_id':192010020, # FRAME INDEX
         'objects': [{  
-                    'object_id':, # OBJECT INDEX
+                    'object_id':, # VEHICLE LICENSE OR HUMAN NAME
                     'object_class': ,# 0:VEHICLE,1:PEDESTRIAN,2:MOTORCYCLE
                     'object_type':  ,# TYPE
                     'object_colr': ,# COLOR
-                    'vehicle_license':, # VEHICLE LICENSE
-                    'person_name':,# HUMAN NAME
+                    'position':{'left': ,# LEFT
+                                'top': ,# TOP
+                                'width': ,# WIDTH
+                                'height': ,# HEIGHT},# POSITION
+                    status:0 # 0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE},
+                    {
+                    'object_id':, # VEHICLE LICENSE OR HUMAN NAME
+                    'object_class': ,# 0:VEHICLE,1:PEDESTRIAN,2:MOTORCYCLE
+                    'object_subclass':  ,# TYPE
+                    'object_colr': ,# COLOR
                     'person_gender': ,# 0:MALE,1:FEMALE
                     'person_age': ,# HUMAN AGE
                     'position':{'left': ,# LEFT
                                 'top': ,# TOP
                                 'width': ,# WIDTH
                                 'height': ,# HEIGHT},# POSITION
-                    status: # 0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE}
+                    status:0 # 0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE}
                     ]
       }
 ### []
