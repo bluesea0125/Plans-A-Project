@@ -4,65 +4,46 @@
     3. Most of CV APIs support JSON Interface. Do they support real time also?
       ->Azure says possible.
        https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/
-       
-### API
-    {[
-        {
-            "cameraid" : 0,
-            "frameid" : 20131212411,
-            "entities" : [
-                          {
-                            "class" : "vehicle",#vehicle,pedestrian,motorcycle
-                            "type" : "truck",#truck,bus,mini
-                            "color" : "green",
-                            "license" : "粤B12345",
-                            "position" : {
-                                          "left" : 100,
-                                          "top" : 100,
-                                          "width" : 200,
-                                          "height" : 200
-                                        }
-                            "status" : "normal"#overstay,
-                          },
-                          {
-                            "class" : "pedestrian",
-                            "type" : "truck",
-                            "name" : "陈玉龙",
-                            "position" : {
-                                              "left" : 100,
-                                              "top" : 100,
-                                              "width" : 200,
-                                              "height" : 200
-                                            }
-                          },                          
-                         ]
-         },
-         {
-         },
-      ]}    
-### Layer-1
-    Object Detection
-    { [{
-          "class": "vehicle",
-          "confidence" : "",
-          "position": {
-                            "left": 100,
-                            "top": 100,
-                            "width": 200,
-                            "height": 300
-                        }
-        },
-        {
-          "class": "ped"
-          "position": {
-                            "left": 300,
-                            "top": 100,
-                            "width": 30,
-                            "height": 80
-                        }                    
-    }
-    
-    
-### Layer-2
+      ->Experiment prove it
+       https://github.com/bluesea0125/tests-http-streaming
 
-
+### SQL
+    camera0=
+                CREATE TABLE IF NOT EXISTS t_objdet_camera0_his (
+                  `camera_id` tinyint(2) NOT NULL COMMENT 'CAMERA ID',
+                  `frame_id` bigint(30) NOT NULL COMMENT 'FRAME INDEX',
+                  `object_id` smallint(3) NOT NULL COMMENT 'OBJECT INDEX',
+                  `object_class` tinyint(2) NOT NULL COMMENT '0:VEHICLE,1:PEDESTRIAN,2:MOTORCYCLE',
+                  `object_type` varchar(20) DEFAULT NULL COMMENT 'TYPE',
+                  `object_colr` varchar(20) DEFAULT NULL COMMENT 'COLOR',
+                  `vehicle_license` varchar(20) DEFAULT NULL COMMENT 'VEHICLE LICENSE',
+                  `person_name` varchar(20) DEFAULT NULL COMMENT 'HUMAN NAME',
+                  `person_gender` tinyint(2) DEFAULT NULL COMMENT '0:MALE,1:FEMALE',
+                  `person_age` smallint(3) DEFAULT NULL COMMENT 'HUMAN AGE',
+                  `left` smallint(4) NOT NULL COMMENT 'POSITION LEFT',
+                  `top` smallint(4) NOT NULL COMMENT 'POSITION TOP',
+                  `width` smallint(4) NOT NULL COMMENT 'POSITION WIDTH',
+                  `height` smallint(4) NOT NULL COMMENT 'POSITION HEIGHT',
+                  `create_time` bigint(20) NOT NULL COMMENT 'CREATE TIME',
+                  `status` tinyint(2) DEFAULT NULL COMMENT '0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE'
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+### [1]
+    {
+        'camera_id':0, # CAMERA ID
+        'frame_id':192010020, # FRAME INDEX
+        'objects': [{  
+                    'object_id':, # OBJECT INDEX
+                    'object_class': ,# 0:VEHICLE,1:PEDESTRIAN,2:MOTORCYCLE
+                    'object_type':  ,# TYPE
+                    'object_colr': ,# COLOR
+                    'vehicle_license':, # VEHICLE LICENSE
+                    'person_name':,# HUMAN NAME
+                    'person_gender': ,# 0:MALE,1:FEMALE
+                    'person_age': ,# HUMAN AGE
+                    'position':{'left': ,# LEFT
+                                'top': ,# TOP
+                                'width': ,# WIDTH
+                                'height': ,# HEIGHT},# POSITION
+                    status: # 0:NORMAL,1:OVERSTAY,2:INVERSE,3:INVERSE}
+                    ]
+      }
