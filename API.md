@@ -18,6 +18,10 @@
                                               |<--SQL Server<--|
     Response<-----Web Server<------Result<----|
 
+    - Merge
+    DataStream---->|
+                   |---->Client
+    Response------>|
     
 ### SQL
     camera0=
