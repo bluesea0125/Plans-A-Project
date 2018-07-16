@@ -41,34 +41,54 @@
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
                 
 # APIs
-### [General]
+### [Object Detection]
     Request: http://127.0.0.1:9000/0/objdet
     Response:
     {
         'camera_id':0, # CAMERA ID
         'frame_id':192010020, # FRAME INDEX
         'objects': [{  
-                    'object_id':, # VEHICLE LICENSE OR HUMAN NAME
+                    'object_id':'粤B12345', # VEHICLE LICENSE OR HUMAN NAME
                     'object_class': ,# 0:VEHICLE, 1:PEDESTRIAN, 2:MOTORCYCLE
-                    'object_subclass':  ,# TYPE
+                    'object_subclass':  ,# 0:BUS, 1:TRUCK
                     'object_colr': ,# COLOR
-                    'position':{'left': ,# LEFT
-                                'top': ,# TOP
-                                'width': ,# WIDTH
-                                'height': ,# HEIGHT},# POSITION
+                    'position':{'left': 100,# LEFT
+                                'top': 200,# TOP
+                                'width': 300,# WIDTH
+                                'height': 400,# HEIGHT},# POSITION
                     status:0 # 0:NORMAL,1:OVERSTAY, 2:INVERSE, 3:INVERSE},
                     {
-                    'object_id':, # VEHICLE LICENSE OR HUMAN NAME
+                    'object_id':'陈东海', # VEHICLE LICENSE OR HUMAN NAME
                     'object_class': ,# 0:VEHICLE, 1:PEDESTRIAN, 2:MOTORCYCLE
                     'object_subclass':  ,# 0:CHILD, 1:ADULT
                     'object_colr': ,# COLOR
                     'person_gender': ,# 0:MALE,1:FEMALE
                     'person_age': ,# HUMAN AGE
-                    'position':{'left': ,# LEFT
-                                'top': ,# TOP
-                                'width': ,# WIDTH
-                                'height': ,# HEIGHT},# POSITION
+                    'position':{'left': 600,# LEFT
+                                'top': 300,# TOP
+                                'width': 20,# WIDTH
+                                'height': 100,# HEIGHT},# POSITION
                     status:0 # 0:NORMAL,1:OVERSTAY, 2:INVERSE, 3:INVERSE}
                     ]
       }
-### []
+      
+### [Object Tracking]
+    Request: http://127.0.0.1:9000/trail/id=
+    Response:
+    [{
+    'object_id':'粤B12345', # VEHICLE LICENSE OR HUMAN NAME
+    'camera_id':0, # CAMERA ID
+    'frame_id':192010020, # FRAME INDEX
+    'position':{'left': 600,# LEFT
+                'top': 300,# TOP
+                'width': 20,# WIDTH
+                'height': 100,# HEIGHT},# POSITION},
+    {
+    'object_id':'粤B12345', # VEHICLE LICENSE OR HUMAN NAME
+    'camera_id':0, # CAMERA ID
+    'frame_id':192010020, # FRAME INDEX
+    'position':{'left': 600,# LEFT
+                'top': 300,# TOP
+                'width': 20,# WIDTH
+                'height': 100,# HEIGHT},# POSITION},                          
+      ]
