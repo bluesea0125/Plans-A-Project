@@ -86,3 +86,19 @@
        - Resolve dilemma
     3. Inspiration
     4. Log
+    
+### Milestones
+    70 days
+    1. 7 days later, release prototype
+       scope: whole framework ,contains any function, but an
+       goal: reveal the whole work, risks, replan
+    2. 20 days later, release demo
+       scope: upgrade performance(speed, accuracy, stability...)
+       goal: reach over 85% 
+    3. 40 days later, release    
+       scope: upgrade and correct
+       goal: reach over 95%
+    4. 60 days laster, release 
+       scope: finalize the project
+    5. 70 days later, test and modify.
+    
